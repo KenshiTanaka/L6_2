@@ -1,0 +1,9 @@
+<% @product.each do |product| %>
+    <p><%= product.name %><%= product.price %>
+    <%= link_to '削除', "/products/#{product.id}",method: :delete %></p>
+    <%= link_to 'カートに追加', "/cart_items/new" %></p>
+    
+    <% end %>
+    
+    <%= link_to '登録',"/products/new" %>
+    <%= link_to 'カートを見る',"cars/show"%>

@@ -1,0 +1,7 @@
+<%= form_for @cart_item do |f| %>
+        <%= f.hidden_field :name, value: params[:name]%>
+        <%= f.hidden_field :price, value: params[:price]%>
+        <%= f.label :qty, '個数を入力してください' %></p>
+        <%= f.text_field :qty %>
+        <%= f.submit "カートに入れる" %>
+     <% end %>
