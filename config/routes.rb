@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 resources :products
 root'products#index'
 get'top/main'
-post'cart_items/new'
+
 resources :cart_items,only:[:new,:create,:destroy]
 resources :carts,only:[:show]
 end
